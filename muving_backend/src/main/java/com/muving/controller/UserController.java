@@ -13,6 +13,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping ("/user")
+@CrossOrigin("*")
 public class UserController {
 
     @Autowired
@@ -24,12 +25,13 @@ public class UserController {
         Role role = new Role();
         role.setRoleId(2L);
 
-        role.setName("Prueba2");
+        role.setName("USUARIO");
 
         UserRol userRol = new UserRol();
         userRol.setUser(user);
         userRol.setRole(role);
 
+        rol.add(userRol);
         return userServices.saveUser(user,rol);
     }
 

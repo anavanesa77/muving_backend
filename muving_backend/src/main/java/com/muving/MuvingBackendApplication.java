@@ -25,7 +25,7 @@ public class MuvingBackendApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        User user = new User();
+       /*User userRole = new User();
 
         user.setUsername("Vanesa");
         user.setPassword("1234");
@@ -45,6 +45,6 @@ public class MuvingBackendApplication implements CommandLineRunner {
 
 
         User saveUser = userServices.saveUser(user, userRoles);
-        System.out.println(saveUser.getUsername());
+        System.out.println(saveUser.getUsername()); */
     }
 }
